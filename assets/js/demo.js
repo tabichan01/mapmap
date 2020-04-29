@@ -43,7 +43,7 @@ $('#map-example').vectorMap(
 	normalizeFunction: 'linear',
 	scaleColors: ['#b6d6ff', '#005ace'],
 	selectedColor: '#35cd3a',
-	selectedRegions: ['ID', 'RU', 'US', 'AU', 'CN', 'BR', ],
+	selectedRegions: ['ITL', 'ES', 'US', 'FR', 'DE', 'UK', 'TU', 'CN', 'RU','IR'],
 	showTooltip: true,
 	onRegionClick: function(element, code, region)
 	{
@@ -61,9 +61,9 @@ var ctx = document.getElementById('statisticsChart').getContext('2d');
 var statisticsChart = new Chart(ctx, {
 	type: 'line',
 	data: {
-		labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+		labels: ["January", "February", "March", " April"],
 		datasets: [ {
-			label: "Subscribers",
+			label: "Average New Cases",
 			borderColor: '#f3545d',
 			pointBackgroundColor: 'rgba(243, 84, 93, 0.2)',
 			pointRadius: 0,
@@ -71,9 +71,9 @@ var statisticsChart = new Chart(ctx, {
 			legendColor: '#f3545d',
 			fill: true,
 			borderWidth: 2,
-			data: [154, 184, 175, 203, 210, 231, 240, 278, 252, 312, 320, 374]
+			data: [2010, 14153, 60545, 73858]
 		}, {
-			label: "New Visitors",
+			label: "Average Active Cases",
 			borderColor: '#fdaf4b',
 			pointBackgroundColor: 'rgba(253, 175, 75, 0.2)',
 			pointRadius: 0,
@@ -81,9 +81,9 @@ var statisticsChart = new Chart(ctx, {
 			legendColor: '#fdaf4b',
 			fill: true,
 			borderWidth: 2,
-			data: [256, 230, 245, 287, 240, 250, 230, 295, 331, 431, 456, 521]
+			data: [9439, 41297, 585002, 1908536]
 		}, {
-			label: "Active Users",
+			label: "Average Total Deaths",
 			borderColor: '#177dff',
 			pointBackgroundColor: 'rgba(23, 125, 255, 0.2)',
 			pointRadius: 0,
@@ -91,7 +91,7 @@ var statisticsChart = new Chart(ctx, {
 			legendColor: '#177dff',
 			fill: true,
 			borderWidth: 2,
-			data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 900]
+			data: [213, 2977, 38699, 206915, ]
 		}]
 	},
 	options : {
